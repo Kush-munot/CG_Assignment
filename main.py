@@ -7,7 +7,6 @@ while(1):
     print("3.   Image to Water Color")
     print("4.   Image to Color Sketch")
     print("5.   Image to Dark Sketch")
-    print("6.   Image to Oil Paint")
     print("0.   Exit")
     
     print("\n\n\n")
