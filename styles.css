@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-color: #2C3333;
+    color:white;
+}
+
+.hlink{
+    text-decoration: none;
+}
+
+.heading{
+    padding-top: 20px;
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    color: white;
+    
+}
+
+.heading:hover{
+    color: aquamarine;
+}
+
+.upload{
+    margin-top: 50px;
+    height: 150px;
+    width: 700px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.upload:hover{
+    background-color: aquamarine;
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.imp{
+    margin-top: 100px;
+    padding-top: 10px;
+    width: 400px;
+}
+
+.btn{
+    height: 40px;
+    width: 100px;
+    margin-top: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: aquamarine;
+}
+
+/* input[type="file"]::file-selector-button {
+    border: 2px solid #6c5ce7;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    background-color: #a29bfe;
+    transition: 1s;
+    height: 80px;
+    width: 200px;
+    border-radius: 25px;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: #81ecec;
+    border: 2px solid #00cec9;
+  } */

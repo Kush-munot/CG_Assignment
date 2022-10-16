@@ -1,17 +1,29 @@
-import cv2;
-image = cv2.imread("./assets/demo2.png")
+import cv2
+import urllib.request
 
-grey_filter = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-cv2.imwrite("graysacle.png",grey_filter)
+def image_to_sketch():
+    image = cv2.imread("./assets/demo.jpg")
 
-invert = cv2.bitwise_not(grey_filter)
-cv2.imwrite("invert.png",invert)
+    grey_filter = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    cv2.imwrite("graysacle.jpg",grey_filter)
 
-blur = cv2.GaussianBlur(invert,(21,21),0)
-cv2.imwrite("blur.png",blur)
+    invert = cv2.bitwise_not(grey_filter)
+    cv2.imwrite("invert.jpg",invert)
 
-invertedBlur = cv2.bitwise_not(blur)
-cv2.imwrite("invBlur.png",invertedBlur)
+    blur = cv2.GaussianBlur(invert,(21,21),0)
+    cv2.imwrite("blur.jpg",blur)
 
-sketch = cv2.divide(grey_filter,invertedBlur,scale=256.0)
-cv2.imwrite("sketch.png",sketch)
+    invertedBlur = cv2.bitwise_not(blur)
+    cv2.imwrite("invBlur.jpg",invertedBlur)
+
+    sketch = cv2.divide(grey_filter,invertedBlur,scale=256.0)
+    cv2.imwrite("sketch.jpg",sketch)
+
+
+def dl_jpg (url, file_path, file_name):
+    full_path = file_path + file_name + '.jpg'
+    urllib.request.urlretrieve(url, full_path)
+    
+url=input('Enter img URL to download: ')
+file_name = input('Enter file name to save as: ')
+dl_jpg(url, 'images/', file_name)
