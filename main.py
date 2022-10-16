@@ -4,9 +4,9 @@ while(1):
     print("Choices Available are : ")
     print("1.   Image to Sketch")
     print("2.   Image to Cartoon")
-    print("3.   Image to Oil Paint")
-    print("4.   Image to Oil Paint")
-    print("5.   Image to Oil Paint")
+    print("3.   Image to Water Color")
+    print("4.   Image to Color Sketch")
+    print("5.   Image to Dark Sketch")
     print("6.   Image to Oil Paint")
     print("0.   Exit")
     
