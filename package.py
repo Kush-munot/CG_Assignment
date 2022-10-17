@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import sys
 
 def image_to_sketch():
     image = cv2.imread("./assets/demo2.jpg")
@@ -95,3 +96,76 @@ if __name__=="__main__":
     # smooth_image()
     # image_translation()
     # bilateral_filter()
+    print("Computer Graphics TA 1 ---- Group 1")
+    
+    print(sys.version)
+
+# while(1):
+    print("Choices Available are : ")
+    print("1.   Image to Sketch")
+    print("2.   Image to Oil Paint")
+    print("3.   Image to Color Sketch")
+    print("4.   Image to Dark Sketch")
+    print("5.   Image to Water Color")
+    print("6.   Image Addition")
+    print("7.   Image Subtraction")
+    print("8.   Get Hue Saturation Value")
+    print("9.   Smooth Image")
+    print("10.  Image Translation")
+    print("11.   Bilateral Image Filter")
+    print("0.   Exit")
+    
+    print("\n\n\n")
+    
+    opt = int(input("Enter Your Choice"))
+    
+    match opt:
+        case 0:            
+            break
+
+        case 1:
+            image_to_sketch()
+            print("1")
+
+        case 2:
+            image_to_oilPaint()
+            print("2")
+        
+        case 3:
+            image_to_colorSketch()
+            print("3")
+
+        case 4:
+            image_to_darkSketch()
+            print("4")
+
+        case 5:
+            image_to_waterColor()
+            print("5")
+
+        case 6:
+            image_addition()
+            print("6")
+        
+        case 7:
+            image_subtraction()
+            print("7")
+        
+        case 8:
+            bgr_hsv()
+            print("8")
+        
+        case 9:
+            smooth_image()
+            print("9")
+        
+        case 10:
+            image_translation()
+            print("10")
+        
+        case 11:
+            bilateral_filter()
+            print("11")
+            
+        case _:
+            print("default")
