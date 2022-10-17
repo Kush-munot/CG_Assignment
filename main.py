@@ -1,19 +1,11 @@
-import package as p
+from src import package as p
 
 if __name__=="__main__":
-    # image_to_sketch()
-    # image_to_oilPaint()
-    # image_to_colorSketch()
-    # image_to_darkSketch()
-    # image_to_waterColor()
-    # image_addition()
-    # image_subtraction()
-    # bgr_hsv()
-    # smooth_image()
-    # image_translation()
-    # bilateral_filter()
-    print("Computer Graphics TA 1 ---- Group 1")
     
+    print("Computer Graphics TA 1 ---- Group 1")
+    image1_path = "./assets/demo2.jpg"
+    image2_path = "./assets/demo4.jpg"
+    image3_path = "./assets/demo3.jpg"
 
     while(1):
         print("Choices Available are : ")
@@ -38,47 +30,47 @@ if __name__=="__main__":
             case 0:
                 break
             case 1:
-                p.image_to_sketch()
+                p.image_to_sketch(image1_path)
                 print("1")
 
             case 2:
-                p.image_to_oilPaint()
+                p.image_to_oilPaint(image1_path)
                 print("2")
             
             case 3:
-                p.image_to_colorSketch()
+                p.image_to_colorSketch(image1_path)
                 print("3")
 
             case 4:
-                p.image_to_darkSketch()
+                p.image_to_darkSketch(image1_path)
                 print("4")
 
             case 5:
-                p.image_to_waterColor()
+                p.image_to_waterColor(image1_path)
                 print("5")
 
             case 6:
-                p.image_addition()
+                p.image_addition(image2_path,image3_path)
                 print("6")
             
             case 7:
-                p.image_subtraction()
+                p.image_subtraction(image3_path,image2_path)
                 print("7")
             
             case 8:
-                p.bgr_hsv()
+                p.bgr_hsv(image1_path)
                 print("8")
             
             case 9:
-                p.smooth_image()
+                p.smooth_image(image2_path)
                 print("9")
             
             case 10:
-                p.image_translation()
+                p.image_translation(image2_path)
                 print("10")
             
             case 11:
-                p.bilateral_filter()
+                p.bilateral_filter(image2_path)
                 print("11")
                 
             case _:
