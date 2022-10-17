@@ -9,7 +9,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name='py-imagizer',
-    version='0.0.1',
+    version='0.0.2',
     description='It is one stop app that is used for Image Processing and Image Editing.The app has ability to change any image into its dense pencil sketches, colour pencil sketch, colour paints, cartoon image, water colour paints effect, etc. We have use Open CV and Numpy as dependencies that run the Package and you and freely contribute new pieces of code on Github',
     author= 'Kush Munot',
     url = 'https://github.com/Kush-munot/CG_Assignment',
