@@ -40,7 +40,6 @@ def image_to_darkSketch(image_path):
 def image_to_waterColor(image_path):
     img = cv2.imread(image_path)
     res = cv2.stylization(img, sigma_s=60, sigma_r=0.6)
-
     cv2.imwrite("waterColor.jpg",res)
     
 def image_addition(image1_path, image2_path):
